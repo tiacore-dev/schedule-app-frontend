@@ -1,6 +1,6 @@
 import {
-  LaptopOutlined,
-  NotificationOutlined,
+  // LaptopOutlined,
+  // NotificationOutlined,
   UserOutlined,
 } from "@ant-design/icons";
 import type { MenuProps } from "antd";
@@ -39,16 +39,16 @@ const { Header, Content, Sider } = Layout;
 
 const items1: MenuProps["items"] = [
   {
-    key: "Расписание",
-    label: "shedule",
+    key: "shedule",
+    label: "Расписание",
   },
   {
-    key: "Логи",
-    label: "logs",
+    key: "logs",
+    label: "Логи",
   },
   {
-    key: "Настройки",
-    label: "settings",
+    key: "settings",
+    label: "Настройки",
   },
 ];
 
@@ -76,9 +76,9 @@ const items1: MenuProps["items"] = [
 
 const items2: MenuProps["items"] = [
   {
-    key: `users`,
+    key: "users",
     icon: <UserOutlined />,
-    label: `Пользователи`,
+    label: "Пользователи",
 
     // children: new Array(4).fill(null).map((_, j) => {
     //   const subKey = index * 4 + j + 1;
