@@ -21,7 +21,7 @@ export const Schedule = () => {
   const getData = async () => {
     try {
       const response = await fetch(
-        `http://147.45.248.78:5027/schedule/${id}/view`,
+        `https://api.schedule.tiacore.com/schedule/${id}/view`,
         {
           method: "GET",
           headers: {

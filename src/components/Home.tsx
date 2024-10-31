@@ -41,14 +41,17 @@ export const Home: React.FC = () => {
 
   const getData = async () => {
     try {
-      const response = await fetch("http://147.45.248.78:5027/schedules/", {
-        method: "GET",
-        headers: {
-          Authorization: "Bearer " + token,
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-      });
+      const response = await fetch(
+        "https://api.schedule.tiacore.com/schedules/",
+        {
+          method: "GET",
+          headers: {
+            Authorization: "Bearer " + token,
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+        }
+      );
 
       if (response.ok) {
         const data = await response.json();

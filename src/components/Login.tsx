@@ -13,9 +13,8 @@ export const Login: React.FC = () => {
   };
 
   const onFinish = async () => {
-    // e.preventDefault();
     try {
-      const response = await fetch("http://147.45.248.78:5027/auth/", {
+      const response = await fetch("https://api.schedule.tiacore.com/auth/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
